@@ -1,0 +1,328 @@
+/* Utilities start */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --yellow: #e3ab0fd9;
+    --dark-blue: #008b8b;
+    --black-1:rgba(0, 0, 0, 0.55);
+    --black-2: #403b3b;
+    --bg-color-light-white: rgb(231 231 231);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--black-1);
+    font-family: myFont-8;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper-container {
+    width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.btn {
+    border: 0;
+    border-radius: 80px;
+    padding: 10px 20px;
+    color: rgba(0, 0, 0, 0.55);
+    background-color: var(--bg-color-light-white);
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: white;
+    background-color: var(--dark-blue);
+}
+
+.active {
+    color: white;
+    background-color: var(--dark-blue);
+}
+
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.65);
+}
+
+@font-face {
+    font-family: myFont-1;
+    src: url(./assets/fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: myFont-2;
+    src: url(./assets/fonts/Lato-Black.ttf);
+}
+
+@font-face {
+    font-family: myFont-3;
+    src: url(./assets/fonts/Lato-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: myFont-4;
+    src: url(./assets/fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: myFont-5;
+    src: url(./assets/fonts/Lato-Italic.ttf);
+}
+
+@font-face {
+    font-family: myFont-6;
+    src: url(./assets/fonts/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: myFont-7;
+    src: url(./assets/fonts/Lato-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: myFont-8;
+    src: url(./assets/fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: myFont-9;
+    src: url(./assets/fonts/Lato-Thin.ttf);
+}
+/* Utilities end */
+
+/* Navbar start */
+.navbar {
+    background-color: var(--bg-color-light-white);
+    padding: 20px 0;
+}
+
+.nav {
+    display: inline-block;
+}
+
+.nav ul  {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    color: var(--black-1);
+    display: block;
+    padding: 10px 18px;
+}
+
+.nav ul li a:hover {
+    color: var(--yellow);
+}
+
+.nav-logo {
+    display: inline-block;
+    width: 430px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.nav-logo a {
+    display: inline-block;
+}
+
+.nav-btn {
+    float: right;
+}
+/* Navbar end */
+
+/* Home page start */
+.home-page {
+    background-color: var(--bg-color-light-white);
+    height: 530px;
+}
+
+.home-wrap {
+    position: relative;
+}
+
+.home-content {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    bottom: 0;
+}
+
+.home-text {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding-top: 30px;
+    padding-right: 30px;
+}
+
+.home-img {
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: right;
+}
+
+.home-img img {
+    height: 500px;
+    width: 500px;
+}
+
+.home-head {
+    margin-bottom: 5px;
+}
+
+.home-head h4 {
+    display: inline-block;
+    color: var(--dark-blue);
+}
+
+.line-box {
+    display: inline-block;
+    width: 40px;
+    height: 3px;
+    background-color: var(--yellow);
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.home-para {
+    padding-right: 88px;
+}
+
+.home-title {
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.home-title h1 {
+    color: var(--black-2);
+    font-size: 60px;
+    font-family: myFont-1;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.home-text p {
+    line-height: 1.5;
+}
+
+.home-btn {
+    margin: 20px 0;
+}
+
+.home-list {
+    width: 350px
+}
+
+.home-list ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.home-list ul li {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.home-list ul li a{
+    color: var(--black-1);
+}
+
+.home-list ul li::before {
+    content: "\2022";
+    color: var(--yellow);
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.home-list ul .no-desc::before {
+    content: none;
+}
+/* Home page end */
+
+/* Float page start */
+.float-page {
+    background-color: white;
+    height: 150px;
+}
+
+.float-wrap {
+    position: relative;
+    height: 100%;
+}
+
+.float-content {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 1000px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.float-box {
+    float: left;
+    width: 24%;
+    height: 100%;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.float-box:hover {
+    background-color: var(--dark-blue);
+    /* color: gold; */
+}
+
+.float-box:hover h2 {
+    color: var(--yellow);
+}
+
+.float-box:hover p {
+    color: white;
+}
+
+.float-box:first-child {
+    margin-left: 5px;
+}
+
+.float-box:last-child {
+    margin-right: 0;
+}
+
+.float-wrap-box {
+    padding: 18px;
+}
+
+.float-wrap-box h2 {
+    color: var(--dark-blue);
+    margin-bottom: 30px;
+}
+
+.float-line-box {
+    height: 3px;
+    width: 100%;
+    background-color: var(--yellow);
+    margin-top: 15px;
+}
+/* Float page end */
